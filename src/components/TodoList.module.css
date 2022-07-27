@@ -1,0 +1,35 @@
+.divContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.h2Completed {
+  font-weight: 500;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0.2em 0 0.8em 0;
+}
+
+.listNotCompleted {
+  margin: 0 2em 2em 1.5em;
+  padding: 0;
+}
+.listCompleted {
+  margin: 0 1.5em 2em 2em;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .divContainer {
+    display: block;
+  }
+  .listNotCompleted {
+    margin: 0 0.4em 0 0.4em;
+    padding: 0;
+  }
+  .listCompleted {
+    margin: 2em 0.4em 0 0.4em;
+    padding: 0;
+  }
+}

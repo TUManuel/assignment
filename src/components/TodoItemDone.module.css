@@ -1,0 +1,67 @@
+.strike {
+  text-decoration: line-through;
+  justify-self: start;
+}
+.item {
+  display: grid;
+  grid-template-columns: 1fr 100fr 1fr;
+  align-items: center;
+  column-gap: 0.6em;
+  padding: 1em;
+  margin: 0.1em 0 0.1em 0;
+}
+.item:hover {
+  background-color: rgba(211, 211, 211, 0.144);
+  border-radius: 0.6em;
+}
+
+.deleteBtn {
+  justify-self: end;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+  color: red;
+}
+.item:hover .deleteBtn {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0s linear 0s, opacity 300ms;
+  color: red;
+}
+
+.checkboxTodo {
+  justify-self: start;
+  cursor: pointer;
+  accent-color: black;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+@media (max-width: 900px) {
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 100fr 1fr;
+    align-items: center;
+    column-gap: 0.6em;
+    padding: 0.8em;
+    margin: 0.4em 0 0.4em 0;
+    background-color: rgba(211, 211, 211, 0.144);
+    border-radius: 0.6em;
+  }
+
+  .deleteBtn {
+    opacity: 1;
+    visibility: visible;
+    justify-self: end;
+    color: red;
+  }
+
+  .checkboxTodo {
+    justify-self: start;
+    cursor: pointer;
+    accent-color: black;
+    width: 1.5em;
+    height: 1.5em;
+  }
+}

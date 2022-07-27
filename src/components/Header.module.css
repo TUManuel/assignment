@@ -1,0 +1,11 @@
+.h1Header {
+  margin: 0 0 1em 1em;
+  padding: 1em 0 0 0;
+}
+
+@media (max-width: 900px) {
+  .h1Header {
+    margin: 0.5em 0 1em 0.4em;
+    padding: 0;
+  }
+}
